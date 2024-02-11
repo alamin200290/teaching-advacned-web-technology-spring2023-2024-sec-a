@@ -1,8 +1,8 @@
 {
-  "name": "teaching-advacned-web-technology-spring2023-2024-sec-a",
+  "name": "2.nodejs",
   "version": "1.0.0",
   "description": "",
-  "main": "htttp.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
