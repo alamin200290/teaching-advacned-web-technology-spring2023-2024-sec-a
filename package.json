@@ -1,0 +1,12 @@
+{
+  "name": "teaching-advacned-web-technology-spring2023-2024-sec-a",
+  "version": "1.0.0",
+  "description": "",
+  "main": "htttp.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
