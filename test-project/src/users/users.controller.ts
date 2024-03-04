@@ -7,11 +7,17 @@ import {
   Post,
   ParseIntPipe,
   ValidationPipe,
+  UseGuards,
+  UseInterceptors,
 } from '@nestjs/common';
 import { UsersService } from './users.service';
 import { CreateUserDto } from './dto/create-user.dto';
+import { UsersGuard } from './users.guard';
+import { MyInterceptor } from './users.interceptor';
 
 @Controller('users')
+@UseInterceptors(MyInterceptor)
+@UseGuards(UsersGuard)
 export class UsersController {
   constructor(private readonly userService: UsersService) {}
 
@@ -25,7 +31,7 @@ export class UsersController {
     return this.userService.findById(id);
   }
 
-  @Post()
+  @Post('create')
   createUser(@Body(ValidationPipe) createUserDto: CreateUserDto) {
     return this.userService.create(createUserDto);
   }
