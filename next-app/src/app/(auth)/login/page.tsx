@@ -1,9 +1,9 @@
 'use client'
+
 import { redirect, useRouter } from "next/navigation"
 
 const Login = () => {
   const router = useRouter();
-  //redirect("/register");
 
   const newAccount = () => {
     router.push("/register");
