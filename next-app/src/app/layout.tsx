@@ -1,4 +1,4 @@
-import NavBar from "@/src/components/NavBar"
+import NavBar from "@/components/NavBar"
 
 export const metadata = {
   title: 'Next.js',

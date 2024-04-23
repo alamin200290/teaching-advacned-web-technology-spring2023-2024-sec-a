@@ -1,4 +1,5 @@
-import WebThreeImage from "@/public/images/web3.jpg"
+import WebThreeImage from '@public/images/web3.jpg';
+
 import Image from "next/image";
 
 export default function Apwt(){
